@@ -4,7 +4,8 @@
 int main()
 {   
     int count =1;
-    char a[]= "AABBCCCddd" ; 
+    char a[256]; 
+    scanf("%255s",a);
     for(int i=0;i<strlen(a);i++){
 
         if(a[i]==a[i+1]){
