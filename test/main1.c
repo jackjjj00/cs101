@@ -1,22 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {   
     int count =1;
     char a[]= "AABBCCCddd" ; 
-    for(int i=0;i<sizeof(a);i++){
+    for(int i=0;i<strlen(a);i++){
 
-        if(a[i]!=a[i+1]){
-            count =1;
+        if(a[i]==a[i+1]){
+            count ++;
         }
         else{
-            count ++;
             printf("%c%d",a[i] , count );
+            count=1;
         }
 
 
     }
-
+    printf("\n");
     return 0;
 }
-
